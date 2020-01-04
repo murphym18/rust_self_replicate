@@ -7,11 +7,11 @@ cargo run > main_copy.rs
 sha256sum src/main.rs main_copy.rs
 ```
 
-You'd see that `src/main.rs` and `main_copy.rs` both hash to the same string. On my Linux system, the commands above give the following output:
+You'd see that `src/main.rs` and `main_copy.rs` both hash to the same string. On my system, `sha256sum` outputs:
 
 ```
-dab8a69abc1bf1a12758ac2c03eba92c3ee6680c9d24a08ea82b874e4f7c36f4  src/main.rs
-dab8a69abc1bf1a12758ac2c03eba92c3ee6680c9d24a08ea82b874e4f7c36f4  main_copy.rs
+eb103e614b2169fc6544498da083f7c3a46e4b7c58bb6b9b3442aa4de2d855fe  src/main.rs
+eb103e614b2169fc6544498da083f7c3a46e4b7c58bb6b9b3442aa4de2d855fe  main_copy.rs
 ```
 
 # Why
