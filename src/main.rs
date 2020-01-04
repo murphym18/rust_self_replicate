@@ -13,10 +13,8 @@ fn main() {
         r#"        line_re.push(',');"#,
         r#"        tmp.push(line_re);"#,
         r#"    }"#,
-        r#"    let mut index = 0;"#,
-        r#"    while index < tmp.len() {"#,
-        r#"        x.insert(2+index, &tmp[index][..]);"#,
-        r#"        index = index + 1;"#,
+        r#"    for index in 0..tmp.len() {"#,
+        r#"        x.insert(2 + index, &tmp[index][..]);"#,
         r#"    }"#,
         r#"    for line in x.iter() {"#,
         r#"        println!("{}", line);"#,
@@ -33,10 +31,8 @@ fn main() {
         line_re.push(',');
         tmp.push(line_re);
     }
-    let mut index = 0;
-    while index < tmp.len() {
-        x.insert(2+index, &tmp[index][..]);
-        index = index + 1;
+    for index in 0..tmp.len() {
+        x.insert(2 + index, &tmp[index][..]);
     }
     for line in x.iter() {
         println!("{}", line);
